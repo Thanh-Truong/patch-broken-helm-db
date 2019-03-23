@@ -1,5 +1,5 @@
 # patch-broken-helm-db
-Helm is not always reliable:  after a failed Helm upgrade, other consecutive Helm upgrade failures could led to an inconsistent stae of Helm database. Consequently, one could never be able to upgrade successfully again !!
+Helm is not always reliable: Sveral Helm upgrades failures could lead to an inconsistent state of Helm database. After that, all Helm upgrades will recorded as `FAILED` regardless how the upgrades actually went.
 
 While waiting for a fix from Helm, which is under discussion as in [here](https://github.com/helm/helm/issues/1193), I made some small scripts to overcome the problem.
 
